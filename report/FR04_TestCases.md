@@ -351,22 +351,12 @@
 
 ## 📊 Tổng hợp Test Cases
 
-| Nhóm             | Test Case IDs | Số lượng | Expected Bugs    |
-| ---------------- | ------------- | -------- | ---------------- |
-| Phone (BVA)      | TC-01 → TC-09 | 9        | BUG-2, BUG-3     |
-| Name             | TC-10 → TC-16 | 7        | —                |
-| Shipping Address | TC-17 → TC-20 | 4        | —                |
-| Role Security    | TC-21 → TC-24 | 4        | BUG-1 (Critical) |
-| Auth Token       | TC-25 → TC-28 | 4        | —                |
-| GUI/UX           | TC-29 → TC-31 | 3        | BUG-4, BUG-5     |
-| **TOTAL**        |               | **31**   | **5 bugs**       |
-
----
-
-## 🐛 Bug Summary
-
-| Bug ID | Severity | Mô tả | Vi phạm |
-| ------ | -------- | ----- | ------- |
-| BUG-1  |          |       | FR-04   |
-| BUG-2  |          |       | FR-04   |
-| BUG-3  |          |       | FR-04   |
+| Nhóm             | Test Case IDs | Số lượng |
+| ---------------- | ------------- | -------- |
+| Phone (BVA)      | TC-01 → TC-09 | 9        |
+| Name             | TC-10 → TC-16 | 7        |
+| Shipping Address | TC-17 → TC-20 | 4        |
+| Role Security    | TC-21 → TC-24 | 4        |
+| Auth Token       | TC-25 → TC-28 | 4        |
+| GUI/UX           | TC-29 → TC-31 | 3        |
+| **TOTAL**        |               | **31**   |
