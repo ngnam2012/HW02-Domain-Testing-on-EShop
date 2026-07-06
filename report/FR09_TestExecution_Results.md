@@ -3,9 +3,9 @@
 > **Execution Date**: July 4, 2026
 > **Tester**: AI Testing Agent
 > **Test Environment**: Local (Backend API: http://localhost:3000)
-> **Total API Test Cases Executed**: 11
-> **Passed**: 3
-> **Failed**: 8
+> **Total Test Cases Executed**: 16 (11 API + 5 Manual UI)
+> **Passed**: 9
+> **Failed**: 7
 
 ---
 
@@ -37,11 +37,14 @@ The FR-09 Coupon Application feature has **catastrophic logic failures** in its 
 
 ---
 
-### 2. Nhóm 2 & 3: Ranh giới Thời gian và Số lượt sử dụng (TC-06, TC-08)
+### 2. Nhóm 2 & 3: Ranh giới Thời gian và Số lượt sử dụng (TC-04, TC-05, TC-06, TC-07, TC-08)
 
 | TC ID | Test Case | Expected | Actual | Result |
 |-------|-----------|----------|--------|--------|
+| TC-04 | Áp mã sát lúc hết hạn | ✅ HTTP 200 | ✅ Manual UI | **PASS** |
+| TC-05 | Áp mã đúng lúc hết hạn | ✅ HTTP 400 | ✅ Manual UI | **PASS** |
 | TC-06 | Áp mã sau khi hết hạn | ✅ HTTP 400 | ✅ HTTP 400 | **PASS** (Caught by prior checks/expire) |
+| TC-07 | Áp mã khi còn lượt | ✅ HTTP 200 | ✅ Manual UI | **PASS** |
 | TC-08 | Áp mã khi hết lượt max uses | ✅ HTTP 400 | ✅ HTTP 400 | **PASS** (Caught by prior checks/max) |
 
 ---
@@ -56,15 +59,15 @@ The FR-09 Coupon Application feature has **catastrophic logic failures** in its 
 
 ---
 
-### 4. Nhóm 5: Xử lý chuỗi Mobile (TC-12, TC-13, TC-14)
+### 4. Nhóm 5: Xử lý chuỗi Mobile (TC-12, TC-13, TC-14, TC-15, TC-16)
 
 | TC ID | Test Case | Expected | Actual | Result |
 |-------|-----------|----------|--------|--------|
 | TC-12 | Whitespace (SAVE10 ) | ✅ HTTP 200 | ❌ HTTP 404 | **FAIL** (No .trim()) |
 | TC-13 | Lowercase (save10) | ✅ HTTP 200 | ❌ HTTP 404 | **FAIL** (No .toUpperCase()) |
 | TC-14 | FAKECODE (Không tồn tại) | ✅ HTTP 404 | ✅ HTTP 404 | **PASS** |
-
-*(Note: TC-04, TC-05, TC-07, TC-15, TC-16 were skipped in this automated API run as they either require complex time-mocking or UI assertions).*
+| TC-15 | Auth Check (Chưa đăng nhập) | ✅ UI Redirect/Toast | ✅ Manual UI | **PASS** |
+| TC-16 | UI Feedback (Cập nhật Live) | ✅ Live update | ✅ Manual UI | **PASS** |
 
 ---
 
@@ -73,10 +76,10 @@ The FR-09 Coupon Application feature has **catastrophic logic failures** in its 
 | Category | Passed | Failed | Total |
 |----------|--------|--------|-------|
 | BVA Threshold | 1 | 2 | 3 |
-| Time / Limits | 2 | 0 | 2 |
+| Time / Limits | 5 | 0 | 5 |
 | Math Logic | 0 | 3 | 3 |
-| UX String Format | 1 | 2 | 3 |
-| **TOTAL** | **4** | **7** | **11** |
+| UX String Format | 3 | 2 | 5 |
+| **TOTAL** | **9** | **7** | **16** |
 
 ---
 
