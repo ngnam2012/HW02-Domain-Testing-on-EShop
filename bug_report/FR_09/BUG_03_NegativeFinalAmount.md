@@ -33,6 +33,9 @@ There is no bounds checking for values below zero.
 It should be:
 `const final_amount = Math.max(0, total_amount - discount_amount);`
 
+## Screenshot
+![Negative Final Amount](../../bug_screenshot/FR_09/BUG_03.png)
+
 ---
 **Test Case**: TC-10 (Toán học - fixed > tổng tiền đơn)  
 **Date Found**: 2026-07-04  

@@ -22,6 +22,10 @@ The UI should block the submission, ideally using HTML5 attributes like `min="1"
 ## Severity
 🟠 **MEDIUM**
 
+## Screenshot
+![Admin form accepting invalid price](../../bug_screenshot/FR_15/BUG_03_FORM.png)
+![Storefront showing invalid price](../../bug_screenshot/FR_15/BUG_03_RESULT.png)
+
 ---
 
 **Test Case**: TC-07, TC-08 (UI Implementation)  

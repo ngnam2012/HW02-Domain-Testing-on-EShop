@@ -36,6 +36,10 @@ The `PUT /api/admin/orders/:id/status` endpoint lacks proper authorization middl
 ## Severity
 🔴 **CRITICAL - MUST FIX BEFORE DEPLOYMENT**
 
+## Screenshot
+![API call from regular user](../../bug_screenshot/FR_10/BUG_02.png)
+![Successful status change result](../../bug_screenshot/FR_10/BUG_02_RESULT.png)
+
 ---
 
 **Test Case**: TC-18  

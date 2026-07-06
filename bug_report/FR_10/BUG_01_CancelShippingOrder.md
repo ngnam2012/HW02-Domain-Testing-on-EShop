@@ -35,6 +35,10 @@ fetch('/api/orders/2/cancel', {
 ## Severity
 🔴 **HIGH**
 
+## Screenshot
+![User cancel shipping order](../../bug_screenshot/FR_10/BUG_01_USER.png)
+![Admin view after cancel](../../bug_screenshot/FR_10/BUG_01_ADMIN.png)
+
 ---
 
 **Test Case**: TC-14  

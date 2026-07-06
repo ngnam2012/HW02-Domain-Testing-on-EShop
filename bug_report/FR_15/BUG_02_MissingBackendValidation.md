@@ -24,6 +24,9 @@ The backend should perform boundary and constraint checks and return `HTTP 400 B
 ## Severity
 🔴 **HIGH**
 
+## Screenshot
+![Missing Backend Validation](../../bug_screenshot/FR_15/BUG_02.png)
+
 ---
 
 **Test Case**: TC-03, TC-04, TC-07, TC-08, TC-09, TC-12  

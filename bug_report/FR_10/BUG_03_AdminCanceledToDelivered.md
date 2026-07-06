@@ -22,6 +22,10 @@ The Admin Order Management UI allows an administrator to transition an order fro
 ## Severity
 🟠 **MEDIUM**
 
+## Screenshot
+![Before - Canceled order with Mark Delivered button](../../bug_screenshot/FR_10/BUG_03_BEFORE.png)
+![After - Order transitioned to Delivered](../../bug_screenshot/FR_10/BUG_03_AFTER.png)
+
 ---
 
 **Test Case**: Edge case (Derived from TC-06 to TC-10 group)  

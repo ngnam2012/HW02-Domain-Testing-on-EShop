@@ -10,7 +10,7 @@ Looking at the Profile form, two fields are required but have no visual indicato
 - "Địa chỉ giao hàng" (Address) - Optional, correctly unmarked
 
 ## Screenshot
-![Form fields without asterisks](FR04_ProfileForm.png)
+![Form fields without asterisks](../../bug_screenshot/FR_04/BUG_02.png)
 
 ## Expected Behavior
 Required fields should be clearly marked with asterisk (*) or other visual indicator, such as:

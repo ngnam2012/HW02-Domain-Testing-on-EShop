@@ -59,6 +59,9 @@ Any user can:
 ## Root Cause (Observable)
 The system accepts "role" field in profile updates without proper authorization checks.
 
+## Screenshot
+![Privilege Escalation](../../bug_screenshot/FR_04/BUG_03.png)
+
 ## Severity
 🔴 **CRITICAL - MUST FIX BEFORE DEPLOYMENT**
 
